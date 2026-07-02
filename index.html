@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Banking System</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="atm-card">
+
+        <div class="logo">
+            <i class="fa-solid fa-building-columns"></i>
+        </div>
+
+        <h2>ATM Banking System</h2>
+
+        <p class="subtitle">
+            Secure • Fast • Reliable
+        </p>
+
+        <div class="balance-card">
+
+            <p>Available Balance</p>
+
+            <h1 id="balance">
+                ₹5000
+            </h1>
+
+        </div>
+
+        <input
+        type="number"
+        id="amount"
+        placeholder="Enter Amount">
+
+        <div class="buttons">
+
+            <button
+            class="deposit"
+            onclick="deposit()">
+
+            <i class="fa-solid fa-circle-plus"></i>
+            Deposit
+
+            </button>
+
+            <button
+            class="withdraw"
+            onclick="withdraw()">
+
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Withdraw
+
+            </button>
+
+            <button
+            class="check"
+            onclick="checkBalance()">
+
+            <i class="fa-solid fa-wallet"></i>
+            Balance
+
+            </button>
+
+        </div>
+
+        <div id="message">
+            Welcome to ATM Banking System
+        </div>
+
+        <div class="history">
+
+            <h3>
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                Transaction History
+
+            </h3>
+
+            <ul id="historyList">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
